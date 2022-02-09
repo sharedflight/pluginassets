@@ -1,0 +1,28 @@
+[
+	{
+		"tag" : "engine1_fire",
+		"display_name" : "Engine #1 Fire",
+		"conditional" : { 
+							"datarefs" : [["sim/operation/failures/rel_engfir0", "=", 6]],
+							"operator" : "OR"
+						},
+		"type"  :  "ENGINE_FIRE",
+		"sender" : "SM",
+		"data" : {
+			"num_engine" : 1
+		}
+	},
+	{
+		"tag" : "engine2_fire",
+		"display_name" : "Engine #2 Fire",
+		"conditional" : { 
+							"datarefs" : [["sim/operation/failures/rel_engfir1", "=", 6]],
+							"operator" : "OR"
+						},
+		"type"  :  "ENGINE_FIRE",
+		"sender" : "SM",
+		"data" : {
+			"num_engine" : 2
+		}
+	}
+]
