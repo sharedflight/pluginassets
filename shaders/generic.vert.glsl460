@@ -1,0 +1,11 @@
+#version 460
+
+layout(location = 0) uniform mat4 pvm;
+
+layout(location = 0) in vec3 vtx_pos;
+
+void main()
+{
+    gl_Position = pvm * vec4(vtx_pos, 1.0);
+}
+
